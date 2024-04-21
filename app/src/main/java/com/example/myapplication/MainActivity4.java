@@ -17,12 +17,12 @@ public class MainActivity4 extends AppCompatActivity {
         }
 
         public void signIn(View view) {
-           // Intent intent = new Intent(this, MainActivity6.class);
-           // startActivity(intent);
+            Intent intent = new Intent(this, MainActivity6.class);
+            startActivity(intent);
         }
         public void signUp(View view) {
-           // Intent intent = new Intent(this, MainActivity5.class);
-           // startActivity(intent);
+            Intent intent = new Intent(this, MainActivity5.class);
+            startActivity(intent);
         }
 
 }
