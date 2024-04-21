@@ -141,7 +141,7 @@ public class MainActivity5 extends AppCompatActivity {
     }
 
     public void signUp(View view) {
-        //  Intent intent = new Intent(this, MainActivity11.class);
-       // startActivity(intent);
+         Intent intent = new Intent(this, MainActivity11.class);
+        startActivity(intent);
     }
 }

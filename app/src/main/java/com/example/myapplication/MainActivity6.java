@@ -78,8 +78,8 @@ public class MainActivity6 extends AppCompatActivity {
         startActivity(intent);
     }
     public void Login(View v){
-       // Intent intent = new Intent(this, MainActivity11.class);
-       // startActivity(intent);
+        Intent intent = new Intent(this, MainActivity11.class);
+        startActivity(intent);
     }
 
     public void Forgot(View v){
