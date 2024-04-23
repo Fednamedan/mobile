@@ -31,7 +31,7 @@ public class MainActivity11 extends AppCompatActivity {
         startActivity(intent);
     }
     public void Home(View v) {
-        Intent intent = new Intent(this, MainActivity10.class);
+        Intent intent = new Intent(this, MainActivity18.class);
         startActivity(intent);
     }
 

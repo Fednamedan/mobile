@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,31 +13,57 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 public class MainActivity16 extends AppCompatActivity {
-
+    public void button5 (View v) {
+        Intent intent = new Intent(this, prog.class);
+        startActivity(intent);
+    }
+    ImageButton imgButton20;
+    ImageButton imgButton21;
+    ImageButton imgButton22;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main16);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        imgButton20 = (ImageButton) findViewById(R.id.home);
+
+        imgButton20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity16.this, MainActivity18.class);
+                startActivities(new Intent[]{intent});
+
+            }
         });
-    }
 
-    public void Home(View v) {
-        Intent intent = new Intent(this, MainActivity10.class);
-        startActivity(intent);
-    }
 
-    public void Walet(View v) {
-        Intent intent = new Intent(this, MainActivity12.class);
-        startActivity(intent);
-    }
+        imgButton21 = (ImageButton) findViewById(R.id.walet);
 
-    public void Track(View v) {
-        Intent intent = new Intent(this, MainActivity16.class);
-        startActivity(intent);
+        imgButton21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity16.this, MainActivity17.class);
+                startActivities(new Intent[]{intent});
+
+            }
+        });
+
+
+        imgButton22 = (ImageButton) findViewById(R.id.imageButton16);
+
+        imgButton22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity16.this, MainActivity11.class);
+                startActivities(new Intent[]{intent});
+
+            }
+        });
+
+
+
     }
 }
