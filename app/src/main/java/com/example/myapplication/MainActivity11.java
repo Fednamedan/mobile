@@ -36,12 +36,12 @@ public class MainActivity11 extends AppCompatActivity {
     }
 
     public void Walet(View v) {
-        Intent intent = new Intent(this, MainActivity12.class);
+        Intent intent = new Intent(this, MainActivity17.class);
         startActivity(intent);
     }
 
     public void Track(View v) {
-       // Intent intent = new Intent(this, MainActivity17.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, MainActivity16.class);
+        startActivity(intent);
     }
 }
